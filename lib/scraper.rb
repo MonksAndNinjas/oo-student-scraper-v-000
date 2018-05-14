@@ -37,7 +37,9 @@ class Scraper
       end
     end
 
-    
+
+    doc.css(".profile-quote").text
+
 
     profile
     binding.pry
