@@ -37,7 +37,7 @@ class Scraper
       end
     end
 
-    doc.css()
+    
 
     profile
     binding.pry
