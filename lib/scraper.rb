@@ -39,7 +39,7 @@ class Scraper
 
 
     profile[:profile_quote] = doc.css(".profile-quote").text
-    profile[:bio] doc.css("")
+    profile[:bio]
 
     profile
     binding.pry
