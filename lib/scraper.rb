@@ -37,7 +37,7 @@ class Scraper
                      end
                    end
 
-    
+    bio_stuff = doc.css("a")
     binding.pry
   end
 
