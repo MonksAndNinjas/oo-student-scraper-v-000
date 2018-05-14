@@ -13,12 +13,12 @@ class Student
 
   def self.create_from_collection(students_array)
     students_array.each do |student_hash|
-      new_instance = Student.new(student_hash)
+      new_instance = Student.new(Scraper)
     end
   end
 
   def add_student_attributes(attributes_hash)
-
+    
   end
 
   def self.all
