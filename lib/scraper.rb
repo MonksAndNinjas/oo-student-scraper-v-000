@@ -36,10 +36,11 @@ class Scraper
         profile[:blog] = v['href']
       end
     end
-      
+
+    doc.css()
 
     profile
-    #binding.pry
+    binding.pry
   end
 
 end
