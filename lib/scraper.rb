@@ -42,7 +42,7 @@ class Scraper
     profile[:bio] = doc.css("p").text
 
     profile
-    binding.pry
+    
   end
 
 end
