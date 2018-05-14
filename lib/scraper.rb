@@ -33,6 +33,7 @@ class Scraper
                     elsif v['href'].include?("github")
                       profile[:github] = v['href']
                     elsif v['href'] != "../" or v['href'] != " " or v['href'] != nil
+                      prfile[:blog] = v[href]
     binding.pry
   end
 
