@@ -38,7 +38,7 @@ class Scraper
     end
 
 
-    profile[:profile_quote]edoc.css(".profile-quote").text
+    profile[:profile_quote] = doc.css(".profile-quote").text
 
 
     profile
