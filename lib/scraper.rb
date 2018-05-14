@@ -32,7 +32,7 @@ class Scraper
         profile[:linkedin] = v['href']
       elsif v['href'].include?("github")
         profile[:github] = v['href']
-      elsif v['href'] != "../" and v['href'] != " " or v['href'] != nil
+      elsif v['href'] != "../" 
         profile[:blog] = v['href']
       end
     end
