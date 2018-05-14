@@ -10,7 +10,7 @@ class Scraper
 
     names = doc.css(".student-name").collect {|v| name.text}
     location = doc.css(".student-location").collect {|v| location.text}
-    profile_url = doc.css("div.student-card a").collect {|v| url['href']}
+    profile_url = doc.css("div.student-card a").collect {|v| v['href']}
 
       i = 0
     while i < names.size
