@@ -27,7 +27,7 @@ class Scraper
 
     social_sites = doc.css("a").collect {|v| v['href']}
     twitter = social_sites[1]
-    binding.prys
+    binding.pry
   end
 
 end
