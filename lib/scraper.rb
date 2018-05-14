@@ -25,8 +25,12 @@ class Scraper
 
     profile = {}
 
-    social_sites = doc.css("a").collect {|v| v['href']}
-    twitter = social_sites[1]
+    social_sites = doc.css("a").collect do |v|
+                    if v['href'].include? "twitter"
+                      profile[:twitter] = v['href']
+                    elsif v['href'].include? = "linkedin"
+                      profile[:linkedin] = v['href']
+                    elsif v['href'].include?
     binding.pry
   end
 
