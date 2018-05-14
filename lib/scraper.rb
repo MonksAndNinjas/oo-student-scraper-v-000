@@ -12,7 +12,7 @@ class Scraper
     location = doc.css(".student-location").collect {|v| v.text}
     profile_url = doc.css("div.student-card a").collect {|v| v['href']}
 
-      i = 0
+    i = 0
     while i < names.size
       roster << {:name => names[i], :location => location[i], :profile_url => profile_url[i]}
       i+=1
