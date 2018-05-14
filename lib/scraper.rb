@@ -26,7 +26,7 @@ class Scraper
     profile = {}
 
     social_sites = doc.css("a").collect {|v| v['href']}
-    binding.pry
+
   end
 
 end
