@@ -34,6 +34,8 @@ class Scraper
                       profile[:github] = v['href']
                     elsif v['href'] != "../" or v['href'] != " " or v['href'] != nil
                       prfile[:blog] = v[href]
+                    end
+                  end
     binding.pry
   end
 
