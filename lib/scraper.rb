@@ -24,6 +24,10 @@ class Scraper
     doc = Nokogiri::HTML(open(profile_url))
 
     profile = []
+
+    i = 0
+
+    while i < doc.css("a").size
     doc.css("a").each
     binding.pry
   end
