@@ -17,6 +17,7 @@ class Scraper
       roster << {:name => names[i], :location => location[i], :profile_url => profile_url[i]}
       i+=1
     end
+
     roster
   end
 
