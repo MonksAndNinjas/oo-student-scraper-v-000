@@ -24,7 +24,7 @@ class Scraper
     doc = Nokogiri::HTML(open(profile_url))
 
     profile = []
-    
+
     social_sites = doc.css("a").collect {|v| v['ref']}
     binding.pry
   end
