@@ -25,17 +25,17 @@ class Scraper
 
     profile = {}
 
-    social_sites = doc.css("a").each do |v|
-                     if v['href'].include?("twitter")
-                       profile[:twitter] = v['href']
-                     elsif v['href'].include?("linkedin")
-                       profile[:linkedin] = v['href']
-                     elsif v['href'].include?("github")
-                       profile[:github] = v['href']
-                     elsif v['href'] != "../" or v['href'] != " " or v['href'] != nil
-                       profile[:blog] = v['href']
-                     end
-                   end
+    doc.css("a").each do |v|
+      if v['href'].include?("twitter")
+        profile[:twitter] = v['href']
+      elsif v['href'].include?("linkedin")
+        profile[:linkedin] = v['href']
+      elsif v['href'].include?("github")
+        profile[:github] = v['href']
+      elsif v['href'] != "../" or v['href'] != " " or v['href'] != nil
+        profile[:blog] = v['href']
+        end
+      end
 
     
     binding.pry
