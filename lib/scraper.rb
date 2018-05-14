@@ -36,6 +36,8 @@ class Scraper
                        profile[:blog] = v['href']
                      end
                    end
+
+    
     binding.pry
   end
 
