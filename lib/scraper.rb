@@ -32,7 +32,7 @@ class Scraper
         profile[:linkedin] = v['href']
       elsif v['href'].include?("github")
         profile[:github] = v['href']
-      elsif v['href'] != "../" or v['href'] != " " or v['href'] != nil
+      elsif v['href'] != "../" and v['href'] != " " or v['href'] != nil
         profile[:blog] = v['href']
       end
     end
@@ -42,7 +42,7 @@ class Scraper
     profile[:bio] = doc.css("p").text
 
     profile
-    
+
   end
 
 end
